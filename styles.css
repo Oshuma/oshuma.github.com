@@ -37,7 +37,7 @@ h1 > a:hover {
 
 #links a:hover {
   border-bottom: 1px solid #888;
-  letter-spacing: 0.50em;
+  font-style: italic;
 }
 
 #link-list {
