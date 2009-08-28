@@ -69,11 +69,16 @@ body {
   color: #333;
 }
 
-#links {
+#content {
+  margin: 0 auto;
+  width: 565px;
+}
+
+#projects {
   text-align: center;
 }
 
-#links a {
+#projects a {
   border-bottom: 1px dashed #888;
   font-weight: bold;
   letter-spacing: 0.25em;
@@ -82,40 +87,30 @@ body {
   text-decoration: none;
 }
 
-#links a:hover {
+#projects a:hover {
   border-bottom: 1px solid #888;
   font-style: italic;
 }
 
-#link-list {
+#projects ul {
   list-style-type: none;
-  margin: 10px auto;
-  margin-right: 355px;
+  margin-top: 10px;
+  margin-right: 75px;
   text-align: right;
-  /* width: 255px; */
 }
 
-#link-list li {
+#projects li {
   margin-bottom: 10px;
 }
 
-#link-list a {
+#projects a {
   letter-spacing: 0.15em;
 }
 
 .info {
+  border-right: 3px solid #333;
+  background-color: #ddd;
   display: none;
-  margin: 1em;
-}
-
-#github-badge {
-  /* margin: 2em auto; */
-  text-align: left !important;
-  width: 250px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-#github-badge .repo_listing {
+  margin: 5px auto;
+  padding: 1em;
 }
