@@ -1,9 +1,9 @@
 Gravatar.base_url = 'http://gravatar.com/avatar';
 
 Gravatar.defaults = {
-  ext: 'png',  // Image Format
-  rating: 'g', // Rating
-  size: '512', // Size
+  ext:    '.png', // Image Format
+  rating: 'g',    // Rating
+  size:   '80',   // Size
 }; // Gravatar.defaults
 
 
@@ -29,9 +29,11 @@ Gravatar.prototype.buildURL = function() {
   imageLink += Gravatar.base_url + '/' + this.hash;
 
   // Tack on the image format.
-  imageLink += '.' + Gravatar.defaults.ext;
+  /* imageLink += '.' + Gravatar.defaults.ext; */
+  imageLink += Gravatar.defaults.ext;
 
   // Finally add the params (image options).
+  // TODO: Clean this up a bit.
   imageLink += '?'; // separator
   imageLink += $.param({
     r: Gravatar.defaults.rating,

@@ -21,7 +21,7 @@ Screw.Unit(function() {
     });
 
     it('should have a url', function() {
-      pending('Needs a RegEx test.');
+      pending('URL test needs a RegEx test.');
     });
 
   }); // Gravatar
