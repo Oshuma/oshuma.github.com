@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>ScrewUnit Test Suite</title>
+
+    <!-- ScrewUnit libraries. -->
+    <script src="lib/jquery-1.2.6.js"></script>
+    <script src="lib/jquery.fn.js"></script>
+    <script src="lib/jquery.print.js"></script>
+    <script src="lib/screw.builder.js"></script>
+    <script src="lib/screw.matchers.js"></script>
+    <script src="lib/screw.events.js"></script>
+    <script src="lib/screw.behaviors.js"></script>
+    <link rel="stylesheet" href="lib/screw.css" />
+
+    <!-- Include any test helpers. -->
+    <script src="spec_helper.js"></script>
+
+    <!-- Application library dependencies. -->
+    <script src="../javascript/jquery.js" type="text/javascript"></script>
+    <script src="../javascript/jquery.md5.js" type="text/javascript"></script>
+
+    <!-- Configuration -->
+    <script src="../javascript/config.js" type="text/javascript"></script>
+
+    <script src="../javascript/gravatar.js"></script>
+    <script src="spec/gravatar_spec.js"></script>
+
+    <script src="../javascript/application.js" type="text/javascript"></script>
+
+    <!-- Just some bullshit to hide the spec output. -->
+    <script type="text/javascript">
+      function hideOutput() {
+        var output = document.getElementById('wrapper');
+        output.style.display = 'none';
+      }
+    </script>
+
+    <!-- Simple styles for the DOM test element. -->
+    <style type="text/css">
+      #wrapper * {
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+
+        background-color: #f4f2e4;
+        border: 2px dashed gray;
+        border-top: none;
+        border-right: none;
+        font-size: 0.8em;
+        padding: 5px;
+        width: 40%;
+      }
+      #wrapper h1 {
+        font-size: 20px;
+        float: right;
+      }
+      #wrapper a {
+        text-decoration: none;
+      }
+      #wrapper a:hover {
+        text-decoration: underline;
+      }
+      #dom_test { /* output */
+        width: 70%;
+      }
+      .pending { /* tests */
+        border: 1px dashed gray;
+        background-color: #F6EB9C;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>Spec Output</h1>
+      <!-- This is the element that's used in the specs. -->
+      <a href="#hide" id="hide_debug" onclick="; hideOutput(); return false;">
+        [ Hide ]
+      </a>
+      <div id="dom_test"></div>
+    </div>
+  </body>
+</html>
