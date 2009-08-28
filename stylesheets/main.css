@@ -1,5 +1,7 @@
 * {
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -32,7 +34,7 @@ body {
 
 #tabs {
   position: fixed;
-  top: 0.5em;
+  top: 15px;
   left: 0;
 
   font-size: 1.5em;
@@ -49,9 +51,11 @@ body {
   text-decoration: none;
 
   border: 2px solid #333;
-  border-left: none;
+  /* -moz-border-radius-topright: 10px; */
   -moz-border-radius-bottomright: 10px;
+  /* -webkit-border-top-right-radius: 10px; */
   -webkit-border-bottom-right-radius: 10px;
+  border-left: none;
 }
 
 #tabs a:hover {
@@ -59,9 +63,35 @@ body {
   color: #333;
 }
 
+#gravatar {
+  position: fixed;
+  top: 15px;
+  left: 115px;
+}
+
 #content {
   margin: 0 auto;
   width: 565px;
+}
+
+#me {
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+}
+
+#me a {
+  border-bottom: 1px solid #888;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0.25em;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+#me a:hover {
+  border-bottom: 1px dashed #888;
+  font-style: normal;
 }
 
 #projects {
@@ -103,4 +133,30 @@ body {
   display: none;
   margin: 5px auto;
   padding: 1em;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+
+  margin: 0 auto;
+}
+
+#footer a {
+  background-color: #333;
+  color: #eee;
+  display: block;
+  padding: 0.25em;
+  text-decoration: none;
+
+  border: 2px solid #333;
+  border-bottom: none;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-left: none
+}
+
+#footer a:hover {
+  background-color: #eee;
+  color: #333;
 }

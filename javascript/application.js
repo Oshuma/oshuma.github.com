@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  updateGravatar();
 
   /**
    * Load the initial page.
@@ -12,6 +13,7 @@ $(document).ready(function() {
    */
   $('#tabs a').click(function() {
     $.get(this.href, function(page) {
+      updateGravatar();
       $('#content').html(page);
     });
     return false;
@@ -28,3 +30,7 @@ $(document).ready(function() {
   });
 
 }); // $(document).ready()
+
+function updateGravatar() {
+  $('#gravatar').attr('src', new Gravatar(Config.randomEmail()).url);
+}
