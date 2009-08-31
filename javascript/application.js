@@ -1,5 +1,9 @@
 $(document).ready(function() {
   updateGravatar();
+  $('#gravatar').live('click', function() {
+    updateGravatar();
+    return false;
+  });
 
   /**
    * Load the initial page.
