@@ -5,7 +5,6 @@ Config.env = 'development';
 Config.emails = [
   'oshuma@gmail.com',
   'dale.campbell@wavesandbox.com',
-  'dale@save-state.net',
   'dale@adeptcluster.com',
 ];
 
