@@ -28,7 +28,7 @@ body {
 }
 
 #header span {
-  font-size: 1.5em;
+  font-size: 1.0em;
   letter-spacing: 0.25em;
 }
 
@@ -74,22 +74,27 @@ body {
   width: 565px;
 }
 
-#me {
-  font-size: 1.5em;
+#social {
+  font-size: 2.5em;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
 }
 
-#me a {
+#social div {
+  margin-bottom: 0.5em;
+}
+
+#social a {
   border-bottom: 1px solid #888;
-  font-weight: bold;
   font-style: italic;
+  font-weight: normal;
   margin-bottom: 0.25em;
   padding-bottom: 3px;
   text-decoration: none;
 }
 
-#me a:hover {
+#social a:hover {
   border-bottom: 1px dashed #888;
   font-style: normal;
 }
@@ -159,4 +164,8 @@ body {
 #footer a:hover {
   background-color: #eee;
   color: #333;
+}
+
+#feed h2 {
+  text-align: center;
 }

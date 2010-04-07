@@ -4,8 +4,8 @@ Config.env = 'development';
 
 Config.emails = [
   'oshuma@gmail.com',
-  'dale.campbell@wavesandbox.com',
-  'dale@adeptcluster.com',
+  'c.dale.campbell@gmail.com',
+  'dale.campbell@gmx.com',
 ];
 
 // Set the app email.
@@ -26,5 +26,5 @@ Config.randomEmail = function() {
 }
 
 // Root URL.
-Config.root = 'content/me.html';
+Config.root = 'content/social.html';
 
