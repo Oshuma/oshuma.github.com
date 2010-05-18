@@ -49,6 +49,7 @@ body {
   margin-bottom: 0.5em;
   padding: 0.25em;
   text-decoration: none;
+  width: 90px;
 
   border: 2px solid #333;
   /* -moz-border-radius-topright: 10px; */
@@ -99,11 +100,11 @@ body {
   font-style: normal;
 }
 
-#projects {
+#code {
   text-align: center;
 }
 
-#projects a {
+#code a {
   border-bottom: 1px dashed #888;
   font-weight: bold;
   letter-spacing: 0.25em;
@@ -112,32 +113,36 @@ body {
   text-decoration: none;
 }
 
-#projects a:hover {
+#code a:hover {
   border-bottom: 1px solid #888;
   font-style: italic;
 }
 
-#projects ul {
+#code ul {
   list-style-type: none;
   margin-top: 10px;
   margin-right: 75px;
-  text-align: right;
+  text-align: left;
 }
 
-#projects li {
+#code li {
   margin-bottom: 10px;
 }
 
-#projects a {
+#code a {
   letter-spacing: 0.15em;
 }
 
 .info {
-  border-right: 3px solid #333;
+  border-left: 3px solid #333;
   background-color: #ddd;
   display: none;
+  line-height: 18px;
   margin: 5px auto;
   padding: 1em;
+}
+
+.info .go-link {
 }
 
 #footer {

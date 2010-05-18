@@ -29,7 +29,7 @@ $(document).ready(function() {
   /**
    * Project list accordion.
    */
-  $('#projects .show-info').live('click', function() {
+  $('#code .show-info').live('click', function() {
     var info = $(this).siblings('.info');
     $('.info').slideUp('fast'); // Hide the other info divs.
     info.slideDown('fast');
