@@ -1,5 +1,8 @@
 $(document).ready(function() {
+
+  // Update the Gravatar on page load.
   updateGravatar();
+
   $('#gravatar').live('click', function() {
     updateGravatar();
     return false;

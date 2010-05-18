@@ -27,4 +27,3 @@ Config.randomEmail = function() {
 
 // Root URL.
 Config.root = 'content/social.html';
-
