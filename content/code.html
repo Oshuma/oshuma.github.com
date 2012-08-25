@@ -2,76 +2,67 @@
   <ul>
 
     <li>
+      &raquo; <a href="#alfred" class="show-info">alfred</a>
+      <div class="info">
+        <a class="go-link" href="https://github.com/oshuma/alfred">&rarr; GO &rarr;</a>
+        Sinatra app to run (and display) arbitrary system commands through HTTP.
+    </li>
+
+    <li>
       &raquo; <a href="#app_config" class="show-info">app_config</a>
       <div class="info">
-        Quick and easy application configuration Ruby library.
-        <br /><br />
         <a class="go-link" href="http://oshuma.github.com/app_config">&rarr; GO &rarr;</a>
-      </div>
-    </li>
-
-    <li>
-      &raquo; <a href="#DeliciousBar" class="show-info">DeliciousBar</a>
-      <div class="info">
-        OS X menu bar app to access your <a href="http://delicious.com/">Delicious</a> bookmarks.
-        <br /><br />
-        <a class="go-link" href="http://oshuma.github.com/DeliciousBar">&rarr; GO &rarr;</a>
-      </div>
-    </li>
-
-    <li>
-      &raquo; <a href="#js-chat" class="show-info">js-chat</a>
-      <div class="info">
-        Simple Javascript chat type thingy.
-        <br /><br />
-        <a class="go-link" href="http://oshuma.github.com/js-chat">&rarr; GO &rarr;</a>
-      </div>
-    </li>
-
-    <li>
-      &raquo; <a href="#github-media" class="show-info">github-media</a>
-      <div class="info">
-        A hackish means of using Github as a file hosting service.
-        <br /><br />
-        <a class="go-link" href="http://oshuma.github.com/media">&rarr; GO &rarr;</a>
-      </div>
-    </li>
-
-    <li>
-      &raquo; <a href="#git-trip" class="show-info">git-trip</a>
-      <div class="info">
-        A unique, completely useless, way of visualizing git commit SHA strings.
-        <br /><br />
-        <a class="go-link" href="http://oshuma.github.com/git-trip">&rarr; GO &rarr;</a>
+        Quick and easy application configuration Ruby library.
       </div>
     </li>
 
     <li>
       &raquo; <a href="#pingfm" class="show-info">pingfm</a>
       <div class="info">
-        <a href="http://ping.fm/">Ping.fm</a> Ruby Library.
-        <br /><br />
         <a class="go-link" href="http://github.com/Oshuma/pingfm">&rarr; GO &rarr;</a>
-      </div>
-    </li>
-
-    <li>
-      &raquo; <a href="#mailinator" class="show-info">mailinator</a>
-      <div class="info">
-        Ruby and Javascript libraries which use the Mailinator service.
-        <br /><br />
-        <a class="go-link" href="http://oshuma.github.com/mailinator">&rarr; GO &rarr;</a>
+        <a href="http://ping.fm/">Ping.fm</a> Ruby Library.
       </div>
     </li>
 
     <li>
       &raquo; <a href="#tiny_song" class="show-info">tiny_song</a>
       <div class="info">
-        <a href="http://tinysong.com/">TinySong</a> Ruby library.
-        <br /><br />
         <a class="go-link" href="http://github.com/Oshuma/tiny_song">&rarr; GO &rarr;</a>
+        <a href="http://tinysong.com/">TinySong</a> Ruby library.
+      </div>
+    </li>
+
+    <li>
+      &raquo; <a href="#vim-dir" class="show-info">vim-dir</a>
+      <div class="info">
+        <a class="go-link" href="https://github.com/Oshuma/vim-dir">&rarr; GO &rarr;</a>
+        My vim setup.
+      </div>
+    </li>
+
+    <li>
+      &raquo; <a href="#vim-dir" class="show-info">zsh-dir</a>
+      <div class="info">
+        <a class="go-link" href="https://github.com/Oshuma/zsh-dir">&rarr; GO &rarr;</a>
+        My zsh setup.
       </div>
     </li>
 
   </ul>
 </div>
+
+<script type="text/javascript">
+    /**
+     * Project list accordion.
+     */
+    $('#code .show-info').on('click', function(e) {
+      var info = $(this).siblings('.info');
+      if (info.is(':hidden')) {
+        $('.info').slideUp('fast'); // Hide the other info divs.
+        info.slideDown('fast');
+      } else {
+        info.slideUp('fast');
+      }
+      e.preventDefault();
+    });
+</script>

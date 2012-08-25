@@ -1,39 +1,30 @@
 $(document).ready(function() {
 
-  // Update the Gravatar on page load.
-  updateGravatar();
-
-  $('#gravatar').live('click', function() {
-    updateGravatar();
-    return false;
-  });
-
   /**
    * Load the initial page.
+   * TODO: Load page from URL hash if it's there.
    */
   $.get(Config.root, function(page) {
     $('#content').html(page);
   });
 
+  // Update the Gravatar on page load.
+  updateGravatar();
+
+  $('#gravatar').on('click', function(e) {
+    updateGravatar();
+    e.preventDefault();
+  });
+
   /**
    * Get a tab link through AJIZ.
    */
-  $('#tabs a').click(function() {
+  $('#tabs a').on('click', function(e) {
     $.get(this.href, function(page) {
       updateGravatar();
       $('#content').html(page);
     });
-    return false;
-  });
-
-  /**
-   * Project list accordion.
-   */
-  $('#code .show-info').live('click', function() {
-    var info = $(this).siblings('.info');
-    $('.info').slideUp('fast'); // Hide the other info divs.
-    info.slideDown('fast');
-    return false;
+    e.preventDefault();
   });
 
 }); // $(document).ready()
