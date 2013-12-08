@@ -5,7 +5,6 @@ Config.env = 'development';
 Config.emails = [
   'oshuma@gmail.com',
   'c.dale.campbell@gmail.com',
-  'dale.campbell@gmx.com',
 ];
 
 // Set the app email.
