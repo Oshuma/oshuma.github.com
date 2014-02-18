@@ -1,6 +1,5 @@
 var Config = Config || {};
-/* Config.env = 'production'; */
-Config.env = 'development';
+Config.env = 'production';
 
 Config.emails = [
   'oshuma@gmail.com',
