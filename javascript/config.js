@@ -22,6 +22,3 @@ switch(Config.env) {
 Config.randomEmail = function() {
   return Config.emails[Math.floor(Math.random() * Config.emails.length)];
 }
-
-// Root URL.
-Config.root = 'content/code.html';

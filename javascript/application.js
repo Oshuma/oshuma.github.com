@@ -1,13 +1,5 @@
 $(document).ready(function() {
 
-  /**
-   * Load the initial page.
-   * TODO: Load page from URL hash if it's there.
-   */
-  $.get(Config.root, function(page) {
-    $('#content').html(page);
-  });
-
   // Update the Gravatar on page load.
   updateGravatar();
 
@@ -17,13 +9,16 @@ $(document).ready(function() {
   });
 
   /**
-   * Get a tab link through AJIZ.
+   * Project list accordion.
    */
-  $('#tabs a').on('click', function(e) {
-    $.get(this.href, function(page) {
-      updateGravatar();
-      $('#content').html(page);
-    });
+  $('#code .show-info').on('click', function(e) {
+    var info = $(this).siblings('.info');
+    if (info.is(':hidden')) {
+      $('.info').slideUp('fast'); // Hide the other info divs.
+      info.slideDown('fast');
+    } else {
+      info.slideUp('fast');
+    }
     e.preventDefault();
   });
 
