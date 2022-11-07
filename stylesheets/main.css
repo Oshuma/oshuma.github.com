@@ -65,10 +65,8 @@ body {
   color: #333;
 }
 
-#gravatar {
-  position: fixed;
-  top: 15px;
-  left: 115px;
+#tabs a.active {
+  width: 120px;
 }
 
 #content {
@@ -159,7 +157,7 @@ body {
 #footer a {
   background-color: #333;
   color: #eee;
-  display: block;
+  display: inline-block;
   padding: 0.25em;
   text-decoration: none;
 
@@ -168,11 +166,6 @@ body {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
   border-left: none
-}
-
-#footer a:hover {
-  background-color: #eee;
-  color: #333;
 }
 
 #feed h2 {
