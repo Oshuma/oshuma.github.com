@@ -75,28 +75,6 @@ body {
   width: 600px;
 }
 
-#social {
-  font-size: 2.5em;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-}
-
-#social div {
-  margin-bottom: 0.5em;
-}
-
-#social a {
-  font-weight: normal;
-  margin-bottom: 0.25em;
-  padding-bottom: 3px;
-  text-decoration: none;
-}
-
-#social a:hover {
-  border-bottom: 2px dashed #888;
-}
-
 #code {
   text-align: center;
 }
